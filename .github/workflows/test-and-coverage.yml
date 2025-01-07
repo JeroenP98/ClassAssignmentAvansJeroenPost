@@ -13,11 +13,11 @@ jobs:
     steps:
       # Checkout the code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       # Setup .NET
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0 # Adjust this based on your project's .NET version
       
@@ -25,17 +25,17 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
         
-      # Install Playwright Browsers
-      - name: Install Playwright Browsers
-        run: dotnet playwright install
-        
-      
-      # Run GUI Tests
-      - name: Run GUI Tests
+      # Playwright 
+      - name: Build & Install
+        run: dotnet build
+      - name: Ensure browsers are installed
+        run: pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
+      - name: Run your tests
         run: |
           cd PlaywrightTests
           dotnet test
-      
+          
+                
       # Upload coverage reports (optional, for debugging)
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v3
