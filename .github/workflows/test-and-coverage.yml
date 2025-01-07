@@ -35,7 +35,7 @@ jobs:
           
         # Coverage test
       - name: Install dependencies
-        run: dotnet tool install dotnet-reportgenerator-globaltool
+        run: dotnet tool install -g dotnet-reportgenerator-globaltool
         
       - name: run branch coverage tests
         run: |
@@ -54,7 +54,7 @@ jobs:
         run: dotnet tool restore
           
       - name: Generate coverage report
-        run: dotnet reportgenerator -reports:DetermineShippingCosts.test/TestResults/*/coverage.cobertura.xml -targetdir:./coverage -reporttypes:MarkdownSummary
+        run: reportgenerator -reports:DetermineShippingCosts.test/TestResults/**/coverage.cobertura.xml -targetdir:./coverage -reporttypes:MarkdownSummary
           
       - name: Create check with coverage report
         uses: LouisBrunner/checks-action@v2.0.0
