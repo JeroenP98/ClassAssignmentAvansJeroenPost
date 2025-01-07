@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DetermineShippingCosts.test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e4367a2f8ea74a8269a957e7787364b51e20278")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+027a8545779be29715cb9fa3c657a4cf4143a099")]
 [assembly: System.Reflection.AssemblyProductAttribute("DetermineShippingCosts.test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DetermineShippingCosts.test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,44 +1,22 @@
-name: Run Unit and GUI Tests
-
+name: Playwright Tests
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-
 jobs:
-  run-tests:
+  test:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
-
     steps:
-      # Checkout the code
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      # Setup .NET
+      - uses: actions/checkout@v4
       - name: Setup dotnet
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0 # Adjust this based on your project's .NET version
-      
-      # Install dependencies
-      - name: Install dependencies
-        run: dotnet restore
-        
-      # Playwright 
+          dotnet-version: 8.0.x
       - name: Build & Install
         run: dotnet build
       - name: Ensure browsers are installed
         run: pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
       - name: Run your tests
-        run: |
-          cd PlaywrightTests
-          dotnet test
-          
-                
-      # Upload coverage reports (optional, for debugging)
-      - name: Upload Coverage Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage-report
+        run: dotnet test
