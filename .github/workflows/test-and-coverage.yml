@@ -11,7 +11,7 @@ permissions:
   checks: write
       
 jobs:
-  test:
+  Tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +31,9 @@ jobs:
       - name: Run GUI test with Playwright
         run: |
           cd PlaywrightTests
-          dotnet test
+          dotnet test --settings:chromium.runsettings
+          dotnet test --settings:firefox.runsettings
+          dotnet test --settings:webkit.runsettings
           
         # Coverage test
       - name: Install dependencies
@@ -60,7 +62,7 @@ jobs:
         uses: LouisBrunner/checks-action@v2.0.0
         if: always()
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           name: Code coverage
           conclusion: ${{ job.status }}
           output: '{"summary":"Code coverage"}'
