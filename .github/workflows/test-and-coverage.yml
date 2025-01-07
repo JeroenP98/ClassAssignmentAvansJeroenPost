@@ -1,0 +1,50 @@
+name: Run Unit and GUI Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      # Setup .NET
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0 # Adjust this based on your project's .NET version
+      
+      # Install dependencies
+      - name: Install dependencies
+        run: dotnet restore
+      
+      # Run Unit Tests with Coverage
+      - name: Run Unit Tests and Check Coverage
+        run: |
+          dotnet test --collect:"XPlat Code Coverage" --filter TestCategory=UnitTests
+          reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:coverage-report" -reporttypes:TextSummary
+          coverage=$(cat coverage-report/Summary.txt | grep Branch | awk '{print $4}' | sed 's/%//')
+          echo "Branch coverage: $coverage%"
+          if (( $(echo "$coverage < 90" | bc -l) )); then
+            echo "Branch coverage is below 90%. Exiting."
+            exit 1
+          fi
+      
+      # Run GUI Tests
+      - name: Run GUI Tests
+        run: |
+          dotnet test --filter TestCategory=GUITests
+      
+      # Upload coverage reports (optional, for debugging)
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage-report

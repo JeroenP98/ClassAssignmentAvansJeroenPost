@@ -441,3 +441,4 @@ C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\PlaywrightTests\bin
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\PlaywrightTests\bin\Debug\net8.0\.playwright\package\lib\vite\traceViewer\uiMode.voC1ZiOQ.css
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\PlaywrightTests\bin\Debug\net8.0\.playwright\package\lib\vite\traceViewer\workbench.C-zR9ysA.css
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\PlaywrightTests\bin\Debug\net8.0\.playwright\package\lib\vite\traceViewer\xtermModule.DSXBckUd.css
+C:\Users\Jeroen\riderprojects\ClassAssignmentAvansJeroenPost\PlaywrightTests\obj\Debug\net8.0\PlaywrightTests.sourcelink.json
