@@ -4,6 +4,12 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+    
+permissions:
+  contents: read
+  actions: read
+  checks: write
+      
 jobs:
   test:
     timeout-minutes: 60
@@ -16,9 +22,46 @@ jobs:
           dotnet-version: 8.0.x
       - name: Build & Install
         run: dotnet build
+        
+        # Playwright tests
       - name: Ensure browsers are installed
         run: | 
           cd PlaywrightTests
           pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
-      - name: Run your tests
-        run: dotnet test
+      - name: Run GUI test with Playwright
+        run: |
+          cd PlaywrightTests
+          dotnet test
+          
+        # Coverage test
+      - name: Install dependencies
+        run: dotnet tool install dotnet-reportgenerator-globaltool
+        
+      - name: run branch coverage tests
+        run: |
+          cd DetermineShippingCosts.test
+          run: dotnet test --logger trx --collect:"XPlat Code Coverage"
+          
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Tests
+          path: DetermineShippingCosts.test/TestResults/*.trx
+          reporter: dotnet-trx
+          
+      - name: Restore local tools
+        run: dotnet tool restore
+          
+      - name: Generate coverage report
+        run: dotnet reportgenerator -reports:DetermineShippingCosts.test/TestResults/*/coverage.cobertura.xml -targetdir:./coverage -reporttypes:MarkdownSummary
+          
+      - name: Create check with coverage report
+        uses: LouisBrunner/checks-action@v2.0.0
+        if: always()
+        with:
+          token: ${{ secrets.TOKEN }}
+          name: Code coverage
+          conclusion: ${{ job.status }}
+          output: '{"summary":"Code coverage"}'
+          output_text_description_file: coverage/Summary.md
