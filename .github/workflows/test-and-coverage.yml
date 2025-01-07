@@ -25,6 +25,10 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
         
+      # Install Playwright Browsers
+      - name: Install Playwright Browsers
+        run: dotnet playwright install
+        
       
       # Run GUI Tests
       - name: Run GUI Tests
