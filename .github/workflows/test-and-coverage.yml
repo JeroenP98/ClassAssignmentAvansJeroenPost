@@ -40,7 +40,7 @@ jobs:
       - name: run branch coverage tests
         run: |
           cd DetermineShippingCosts.test
-          run: dotnet test --logger trx --collect:"XPlat Code Coverage"
+          dotnet test --logger trx --collect:"XPlat Code Coverage"
           
       - name: Test Report
         uses: dorny/test-reporter@v1
