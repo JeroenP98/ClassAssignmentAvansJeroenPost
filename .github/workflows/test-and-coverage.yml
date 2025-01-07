@@ -24,6 +24,10 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: dotnet restore
+        
+      # Install ReportGenerator
+      - name: Install ReportGenerator
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
       
       # Run Unit Tests with Coverage
       - name: Run Unit Tests and Check Coverage

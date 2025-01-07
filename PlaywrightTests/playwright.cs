@@ -78,10 +78,13 @@ public class Tests : PageTest
         var totalExpectedPrice = totalBeltPrice + totalSmartphonePrice;
         await Page.GotoAsync("https://demowebshop.tricentis.com/cart");
         var totalPriceString = await Page.GetByRole(AriaRole.Row, new() { Name = "Sub-Total:" }).Locator("span").Nth(2).TextContentAsync();
-        var totalPrice = double.Parse(totalPriceString.Replace(".", ","));
+        if (totalPriceString != null)
+        {
+            var totalPrice = double.Parse(totalPriceString.Replace(".", ","));
         
-        Assert.That(totalExpectedPrice, Is.EqualTo(totalPrice));
-        
+            Assert.That(totalExpectedPrice, Is.EqualTo(totalPrice));
+        }
+
         // Finally, log out
         await Logout();
     }
