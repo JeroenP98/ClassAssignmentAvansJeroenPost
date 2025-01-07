@@ -80,7 +80,7 @@ public class Tests : PageTest
         var totalPriceString = await Page.GetByRole(AriaRole.Row, new() { Name = "Sub-Total:" }).Locator("span").Nth(2).TextContentAsync();
         if (totalPriceString != null)
         {
-            var totalPrice = double.Parse(totalPriceString.Replace(".", ","));
+            var totalPrice = double.Parse(totalPriceString, System.Globalization.CultureInfo.InvariantCulture);
         
             Assert.That(totalExpectedPrice, Is.EqualTo(totalPrice));
         }
