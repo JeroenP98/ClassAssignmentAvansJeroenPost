@@ -1,0 +1,11 @@
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\bin\Debug\net8.0\DetermineShippingCosts.class.deps.json
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\bin\Debug\net8.0\DetermineShippingCosts.class.dll
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\bin\Debug\net8.0\DetermineShippingCosts.class.pdb
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.AssemblyInfoInputs.cache
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.AssemblyInfo.cs
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.csproj.CoreCompileInputs.cache
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.dll
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\refint\DetermineShippingCosts.class.dll
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.pdb
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\ref\DetermineShippingCosts.class.dll

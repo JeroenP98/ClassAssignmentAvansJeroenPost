@@ -1,0 +1,30 @@
+apiVersion: v1alpha
+kind: playwright
+sauce:
+  region: eu-central-1
+  concurrency: 1
+playwright:
+  version: 1.49.0 # Use your Playwright version
+  configFile: playwright.config.js
+suites:
+  - name: "Firefox Win"
+    platformName: "Windows 11"
+    screenResolution: "1440x900"
+    testMatch: ["*.cs"]
+    params:
+      browserName: "firefox"
+      project: "firefox" # Runs the project that's defined in `playwright.config.js`
+  - name: "Chromium Mac"
+    platformName: "macOS 12"
+    screenResolution: "1440x900"
+    testMatch: ["*.cs"]
+    params:
+      browserName: "chromium"
+      project: "chromium"
+  - name: "Webkit Win"
+    platformName: "Windows 11"
+    screenResolution: "1440x900"
+    testMatch: ["*.cs"]
+    params:
+      browserName: "webkit"
+      project: "webkit"

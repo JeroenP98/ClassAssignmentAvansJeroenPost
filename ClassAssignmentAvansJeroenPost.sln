@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetermineShippingCosts.test", "DetermineShippingCosts.test\DetermineShippingCosts.test.csproj", "{AA79DC87-D049-494A-9D62-7D1584858AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetermineShippingCosts.class", "DetermineShippingCosts.class\DetermineShippingCosts.class.csproj", "{B6ECD3A8-8138-4418-838C-C032CE5EACE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightTests", "PlaywrightTests\PlaywrightTests.csproj", "{901F62BB-E305-45B8-8D22-C86FFA651C17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA79DC87-D049-494A-9D62-7D1584858AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA79DC87-D049-494A-9D62-7D1584858AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA79DC87-D049-494A-9D62-7D1584858AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA79DC87-D049-494A-9D62-7D1584858AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ECD3A8-8138-4418-838C-C032CE5EACE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ECD3A8-8138-4418-838C-C032CE5EACE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ECD3A8-8138-4418-838C-C032CE5EACE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ECD3A8-8138-4418-838C-C032CE5EACE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901F62BB-E305-45B8-8D22-C86FFA651C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901F62BB-E305-45B8-8D22-C86FFA651C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901F62BB-E305-45B8-8D22-C86FFA651C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901F62BB-E305-45B8-8D22-C86FFA651C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
