@@ -9,3 +9,4 @@ C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCo
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\refint\DetermineShippingCosts.class.dll
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.pdb
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\ref\DetermineShippingCosts.class.dll
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.class\obj\Debug\net8.0\DetermineShippingCosts.class.sourcelink.json

@@ -100,3 +100,4 @@ C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCo
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.test\obj\Debug\net8.0\DetermineShippingCosts.test.pdb
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.test\obj\Debug\net8.0\DetermineShippingCosts.test.genruntimeconfig.cache
 C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.test\obj\Debug\net8.0\ref\DetermineShippingCosts.test.dll
+C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.test\obj\Debug\net8.0\DetermineShippingCosts.test.sourcelink.json

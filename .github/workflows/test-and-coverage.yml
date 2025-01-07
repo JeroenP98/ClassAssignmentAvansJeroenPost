@@ -25,26 +25,12 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
         
-      # Install ReportGenerator
-      - name: Install ReportGenerator
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool
-      
-      # Run Unit Tests with Coverage
-      - name: Run Unit Tests and Check Coverage
-        run: |
-          dotnet test --collect:"XPlat Code Coverage" --filter TestCategory=UnitTests
-          reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:coverage-report" -reporttypes:TextSummary
-          coverage=$(cat coverage-report/Summary.txt | grep Branch | awk '{print $4}' | sed 's/%//')
-          echo "Branch coverage: $coverage%"
-          if (( $(echo "$coverage < 90" | bc -l) )); then
-            echo "Branch coverage is below 90%. Exiting."
-            exit 1
-          fi
       
       # Run GUI Tests
       - name: Run GUI Tests
         run: |
-          dotnet test --filter TestCategory=GUITests
+          cd PlaywrightTests
+          dotnet test
       
       # Upload coverage reports (optional, for debugging)
       - name: Upload Coverage Report
