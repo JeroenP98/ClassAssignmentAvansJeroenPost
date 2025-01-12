@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\Determineshippingcosts.test\\DetermineShippingCosts.test.csproj": {}
+    "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.test\\DetermineShippingCosts.test.csproj": {}
   },
   "projects": {
     "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj": {
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\Determineshippingcosts.test\\DetermineShippingCosts.test.csproj": {
+    "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.test\\DetermineShippingCosts.test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\Determineshippingcosts.test\\DetermineShippingCosts.test.csproj",
+        "projectUniqueName": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.test\\DetermineShippingCosts.test.csproj",
         "projectName": "DetermineShippingCosts.test",
-        "projectPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\Determineshippingcosts.test\\DetermineShippingCosts.test.csproj",
+        "projectPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.test\\DetermineShippingCosts.test.csproj",
         "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\Determineshippingcosts.test\\obj\\",
+        "outputPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,11 +103,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

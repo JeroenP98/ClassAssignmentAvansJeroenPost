@@ -1736,11 +1736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\PlaywrightTests\\PlaywrightTests.csproj",
+      "projectUniqueName": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\PlaywrightTests\\PlaywrightTests.csproj",
       "projectName": "PlaywrightTests",
-      "projectPath": "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\PlaywrightTests\\PlaywrightTests.csproj",
+      "projectPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\PlaywrightTests\\PlaywrightTests.csproj",
       "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\PlaywrightTests\\obj\\",
+      "outputPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\PlaywrightTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1768,11 +1768,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

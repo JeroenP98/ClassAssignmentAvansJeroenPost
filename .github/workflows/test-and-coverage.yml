@@ -48,7 +48,7 @@ jobs:
         uses: dorny/test-reporter@v1
         if: success() || failure()
         with:
-          name: Tests
+          name: CodeCoverage
           path: DetermineShippingCosts.test/TestResults/*.trx
           reporter: dotnet-trx
           
