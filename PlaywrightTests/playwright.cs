@@ -1,5 +1,6 @@
-using Microsoft.Playwright.NUnit;
 using Microsoft.Playwright;
+
+namespace PlaywrightTests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
@@ -117,7 +118,7 @@ public class Tests : PageTest
     {
         await Page.GotoAsync(productUrl);
         var priceText = await Page.Locator(".product-price").TextContentAsync();
-        return double.Parse(priceText, System.Globalization.CultureInfo.InvariantCulture);
+        return double.Parse(priceText ?? throw new InvalidOperationException(), System.Globalization.CultureInfo.InvariantCulture);
     }
     
     private async Task Logout()
