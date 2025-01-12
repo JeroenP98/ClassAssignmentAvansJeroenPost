@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Code coverage an GUI tests
 on:
   push:
     branches: [ main, master ]
