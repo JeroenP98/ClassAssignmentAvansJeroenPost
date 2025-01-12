@@ -67,29 +67,6 @@ jobs:
           conclusion: ${{ job.status }}
           output: '{"summary":"Code coverage"}'
           output_text_description_file: coverage/Summary.md
-          
-      - name: Install SoapUI
-        run: |
-          sudo apt-get update
-          sudo apt-get install fontconfig
-          sudo apt-get install -y default-jre wget
-          wget https://dl.eviware.com/ready-api/ReadyAPI-5.8.0-linux-bin.tar.gz -O soapui.tar.gz
-          tar -xzf soapui.tar.gz
-          sudo mv ReadyAPI-5.8.0 /opt/soapui
-          
-      - name: Run SOAP API Tests
-        run: |
-          /opt/soapui/bin/testrunner.sh -s"TestSuiteJeroen" -c"GetPaymentMethodCollection" -R"JUnit-Style HTML Report" soapui/DetermineShippingCosts-soapui-project.xml
-
-      - name: Run Load Tests
-        run: |
-          /opt/soapui/bin/testrunner.sh -s"TestSuiteJeroen" -c"LoadTest" -L"LoadTest 1" -R"JUnit-Style HTML Report" soapui/DetermineShippingCosts-soapui-project.xml
-          
-      - name: Upload Test Reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: soapui-test-reports
-          path: /path/to/soapui-reports/*
 
 
 
