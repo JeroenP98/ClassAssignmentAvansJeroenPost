@@ -1,0 +1,43 @@
+name: SOAPUI Tests Workflow V2
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+    
+    
+jobs:
+  soapui-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      # Step 2: Run SoapUI Docker Container
+      - name: Start SoapUI Container
+        run: |
+          docker run -d --name soapui \
+            -v ${{ github.workspace }}/soapui:/soapui-projects \
+            ddavison/soapui
+      
+      # Step 3: Wait for the Container to Be Ready
+      - name: Wait for SoapUI to Start
+        run: |
+          for i in {1..10}; do
+            if docker exec soapui ls > /dev/null 2>&1; then
+              echo "SoapUI container is ready!"
+              exit 0
+            fi
+            echo "Waiting for SoapUI..."
+            sleep 5
+          done
+          echo "SoapUI did not start in time."
+          exit 1
+          
+      # Step 4b: Run Load Test via CLI
+      - name: Load test
+        run: |
+          docker exec soapui /bin/sh -c "loadtestrunner.sh -sTestSuiteJeroen -cLoadTest -l'LoadTest 1' /soapui-projects/DetermineShippingCosts-soapui-project.xml" > load-test-summary.log
