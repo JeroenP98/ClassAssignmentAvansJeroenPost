@@ -14,7 +14,7 @@ jobs:
     steps:
       # Step 1: Checkout the code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       # Step 2: Run SoapUI Docker Container
       - name: Start SoapUI Container
@@ -37,7 +37,9 @@ jobs:
           echo "SoapUI did not start in time."
           exit 1
           
-      # Step 4b: Run Load Test via CLI
       - name: Load test
         run: |
-          docker exec soapui /bin/sh -c "loadtestrunner.sh -sTestSuiteJeroen -cLoadTest -l'LoadTest 1' /soapui-projects/DetermineShippingCosts-soapui-project.xml" > load-test-summary.log
+          docker exec soapui /bin/sh -c "
+            cd /opt/SoapUI/bin &&
+            ./loadtestrunner.sh -sTestSuiteJeroen -cLoadTest -l'LoadTest 1' /soapui-projects/DetermineShippingCosts-soapui-project.xml
+          "
