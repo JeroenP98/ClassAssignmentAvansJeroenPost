@@ -33,14 +33,24 @@ jobs:
           done
           echo "SoapUI did not start in time."
           exit 1
-      
-      # Step 4: Run SOAPUI Tests
-      - name: Run SOAPUI Tests
+
+      # Step 4a: Run GetPaymentMethodCollection API Test
+      - name: SOAP API test
         run: |
           curl --form "project=@soapui/DetermineShippingCosts-soapui-project.xml" \
                --form "suite=TestSuiteJeroen" \
+               --form "case=GetPaymentMethodCollection" \
                --form "option=-r" \
-               http://localhost:3000 > soapui-summary.log
+               http://localhost:3000 > api-test-summary.log
+      
+      # Step 4b: Run Load Test: LoadTest
+      - name: Load test
+        run: |
+          curl --form "project=@soapui/DetermineShippingCosts-soapui-project.xml" \
+            --form "suite=TestSuiteJeroen" \
+            --form "case=LoadTest" \
+            --form "option=-r" \
+            http://localhost:3000 > load-test-summary.log
       
       # Step 9: Cleanup SoapUI Container
       - name: Cleanup SoapUI Container

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj": {}
+    "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj": {
+    "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj",
+        "projectUniqueName": "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj",
         "projectName": "DetermineShippingCosts.class",
-        "projectPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj",
+        "projectPath": "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj",
         "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\obj\\",
+        "outputPath": "C:\\Users\\Jeroen\\riderprojects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
