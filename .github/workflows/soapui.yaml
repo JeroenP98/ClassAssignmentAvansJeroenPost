@@ -41,36 +41,6 @@ jobs:
                --form "suite=TestSuiteJeroen" \
                --form "option=-r" \
                http://localhost:3000 > soapui-summary.log
-          
-      # Step 5: Generate Markdown Report
-      - name: Generate Markdown Report
-        run: |
-          echo "## SoapUI Test Report" > report.md
-          echo "\`\`\`" >> report.md
-          cat soapui-summary.log >> report.md
-          echo "\`\`\`" >> report.md
-      
-      # Step 6: Upload Markdown Report to Actions Summary
-      - name: Upload Markdown Report to Actions Summary
-        run: cat report.md >> $GITHUB_STEP_SUMMARY
-      
-      # Step 7: Generate HTML Report
-      - name: Generate HTML Report
-        run: |
-          echo "<!DOCTYPE html>" > report.html
-          echo "<html><head><title>SoapUI Test Report</title></head><body>" >> report.html
-          echo "<h1>SoapUI Test Report</h1>" >> report.html
-          echo "<pre>" >> report.html
-          cat soapui-summary.log >> report.html
-          echo "</pre>" >> report.html
-          echo "</body></html>" >> report.html
-      
-      # Step 8: Upload HTML Report
-      - name: Upload HTML Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: soapui-test-report
-          path: report.html
       
       # Step 9: Cleanup SoapUI Container
       - name: Cleanup SoapUI Container
