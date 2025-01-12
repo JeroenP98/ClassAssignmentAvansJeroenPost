@@ -71,6 +71,7 @@ jobs:
       - name: Install SoapUI
         run: |
           sudo apt-get update
+          sudo apt-get install fontconfig
           sudo apt-get install -y default-jre wget
           wget https://dl.eviware.com/ready-api/ReadyAPI-5.8.0-linux-bin.tar.gz -O soapui.tar.gz
           tar -xzf soapui.tar.gz

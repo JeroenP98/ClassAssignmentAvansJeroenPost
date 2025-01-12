@@ -1,0 +1,31 @@
+name: SOAPUI Tests Workflow
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  soapui-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      # Step 2: Run SOAPUI tests using Docker
+      - name: Run SOAPUI Tests
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}soapui:/soapui-projects \
+            ddavison/docker-soapui:latest \
+            testrunner.sh soapui-projects/DetermineShippingCosts-soapui-project.xml
+      
+      # Optional: Upload test results as artifacts
+      - name: Upload SOAPUI Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: soapui-test-results
+          path: soapui/test-results/
