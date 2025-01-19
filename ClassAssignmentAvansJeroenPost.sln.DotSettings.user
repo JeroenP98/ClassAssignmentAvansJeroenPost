@@ -1,18 +1,18 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Jeroen\AppData\Local\JetBrains\Rider2024.1\resharper-host\temp\Rider\vAny\CoverageData\_ClassAssignmentAvansJeroenPost.-412403194\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2901b0fc_002D7039_002D4cae_002D89ee_002D10f0a62370f5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DetermineShippingCosts_" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Or&gt;&#xD;
-    &lt;Project Location="C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.test" Presentation="&amp;lt;DetermineShippingCosts.test&amp;gt;" /&gt;&#xD;
-    &lt;TestAncestor&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::ExampleTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::PlaywrightTests.ExampleTest.HasTitle&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::PlaywrightTests.ExampleTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::Tests&lt;/TestId&gt;&#xD;
-    &lt;/TestAncestor&gt;&#xD;
-  &lt;/Or&gt;&#xD;
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2901b0fc_002D7039_002D4cae_002D89ee_002D10f0a62370f5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DetermineShippingCosts_" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;Project Location="C:\Users\Jeroen\RiderProjects\ClassAssignmentAvansJeroenPost\DetermineShippingCosts.test" Presentation="&amp;lt;DetermineShippingCosts.test&amp;gt;" /&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::ExampleTest&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::PlaywrightTests.ExampleTest.HasTitle&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::PlaywrightTests.ExampleTest&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::Tests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=438720c4_002D1895_002D4c72_002D8dbb_002D228694e50805/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::Tests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=438720c4_002D1895_002D4c72_002D8dbb_002D228694e50805/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::901F62BB-E305-45B8-8D22-C86FFA651C17::net8.0::Tests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
