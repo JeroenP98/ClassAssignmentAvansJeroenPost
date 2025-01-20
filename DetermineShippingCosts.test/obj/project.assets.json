@@ -998,33 +998,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/jeroenpost/.nuget/packages/": {}
+    "C:\\Users\\Jeroen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeroenpost/RiderProjects/ClassAssignmentAvansJeroenPost/DetermineShippingCosts.test/DetermineShippingCosts.test.csproj",
+      "projectUniqueName": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\determineshippingcosts.test\\DetermineShippingCosts.test.csproj",
       "projectName": "DetermineShippingCosts.test",
-      "projectPath": "/Users/jeroenpost/RiderProjects/ClassAssignmentAvansJeroenPost/DetermineShippingCosts.test/DetermineShippingCosts.test.csproj",
-      "packagesPath": "/Users/jeroenpost/.nuget/packages/",
-      "outputPath": "/Users/jeroenpost/RiderProjects/ClassAssignmentAvansJeroenPost/DetermineShippingCosts.test/obj/",
+      "projectPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\determineshippingcosts.test\\DetermineShippingCosts.test.csproj",
+      "packagesPath": "C:\\Users\\Jeroen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\determineshippingcosts.test\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/jeroenpost/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jeroen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/jeroenpost/RiderProjects/ClassAssignmentAvansJeroenPost/DetermineShippingCosts.class/DetermineShippingCosts.class.csproj": {
-              "projectPath": "/Users/jeroenpost/RiderProjects/ClassAssignmentAvansJeroenPost/DetermineShippingCosts.class/DetermineShippingCosts.class.csproj"
+            "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj": {
+              "projectPath": "C:\\Users\\Jeroen\\RiderProjects\\ClassAssignmentAvansJeroenPost\\DetermineShippingCosts.class\\DetermineShippingCosts.class.csproj"
             }
           }
         }
@@ -1081,7 +1088,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

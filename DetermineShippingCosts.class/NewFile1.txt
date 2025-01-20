@@ -1,1 +1,8 @@
 test
+
+running static tests
+dotnet test --collect:"XPlat Code Coverage"
+
+generating report
+reportgenerator -reports:"TestResults/dde3e4fd-20ba-4e27-b850-568a57c35304/coverage.cobertura.xml" -targetdir:"coverageresults" -reporttypes:Html
+
