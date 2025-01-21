@@ -4,5 +4,13 @@ running static tests
 dotnet test --collect:"XPlat Code Coverage"
 
 generating report
-reportgenerator -reports:"TestResults/dde3e4fd-20ba-4e27-b850-568a57c35304/coverage.cobertura.xml" -targetdir:"coverageresults" -reporttypes:Html
+reportgenerator -reports:"..." -targetdir:"coverageresults" -reporttypes:Html
+
+playwright tests
+
+dotnet test --settings:chromium.runsettings
+dotnet test --settings:firefox.runsettings
+dotnet test --settings:webkit.runsettings
+
+PWDEBUG=1 dotnet test
 
